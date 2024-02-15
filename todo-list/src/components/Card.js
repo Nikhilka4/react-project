@@ -1,10 +1,12 @@
+import { FcTodoList } from "react-icons/fc";
 
 
-const Card = () => {
+const Card = (props) => {
   return (
     <div className="container">
         <div className="todo-app">
-            <h2>To-Do list <img src="../../images/icon.png" /></h2>
+            <h2>To-Do list <FcTodoList className="img"/></h2>
+            <img src="props.icon" />
             <div class="row">
                 <input type="text" id="input-box" placeholder="Add any task" />
                 <button onclick="addTask()">Add</button>
